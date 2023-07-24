@@ -1,5 +1,3 @@
 FROM httpd
-RUN apt update -y
-RUN mkdir /web
-COPY index.html /web
+COPY index.html /usr/local/apache2/htdocs
 
